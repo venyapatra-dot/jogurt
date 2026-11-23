@@ -50,7 +50,7 @@ export default function HowToOrderSection({ formUrl }) {
         <div className="cta-banner">
           <h3 className="cta-title">Ready to place your order?</h3>
           <p className="cta-subtitle">Jump straight to our order form to submit your delivery request instantly.</p>
-          <a href={formUrl} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ backgroundColor: 'white', color: 'var(--primary)' }}>
+          <a href={formUrl} target="_blank" rel="noopener noreferrer" className="forms">
             Complete Order Form <ExternalLink size={18} />
           </a>
         </div>

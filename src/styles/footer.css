@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--primary);
-  color: #d1c4bd;
+  background-color: #b22222 ;
+  color: #fff1c1;
   padding: 3rem 2rem 1.5rem;
   margin-top: auto;
 }
@@ -15,7 +15,7 @@
 }
 
 .footer-logo {
-  color: white;
+  color: #fff1c1;
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -23,10 +23,10 @@
 
 .footer-text {
   font-size: 0.875rem;
+  color: #fff1c1;
 }
-
 .footer-heading {
-  color: white;
+  color: #fff1c1;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
@@ -56,6 +56,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   font-size: 0.8125rem;
+  color: #fff1c1;
 }
 
 @media (max-width: 640px) {

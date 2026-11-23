@@ -27,12 +27,12 @@ export default function OrderDrawer({ isOpen, onClose, cart, onUpdateQuantity, t
               <div key={item.id} className="cart-item">
                 <div>
                   <div className="cart-item-name">{item.title}</div>
-                  <div className="cart-item-price">${item.price.toFixed(2)} each</div>
+                  <div className="cart-item-price">RP{item.price} each</div>
                 </div>
                 <div className="quantity-controls">
-                  <button className="btn-qty" onClick={() => onUpdateQuantity(item.id, -1)}>-</button>
+                  <button className="btn-qty1" onClick={() => onUpdateQuantity(item.id, -1)}>-</button>
                   <span>{item.quantity}</span>
-                  <button className="btn-qty" onClick={() => onUpdateQuantity(item.id, 1)}>+</button>
+                  <button className="btn-qty2" onClick={() => onUpdateQuantity(item.id, 1)}>+</button>
                 </div>
               </div>
             ))
@@ -42,7 +42,7 @@ export default function OrderDrawer({ isOpen, onClose, cart, onUpdateQuantity, t
         <div className="drawer-footer">
           <div className="cart-total">
             <span>Estimated Total:</span>
-            <span>${total.toFixed(2)}</span>
+            <span>RP{total}</span>
           </div>
           <a
             href={formUrl}

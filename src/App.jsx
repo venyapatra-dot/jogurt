@@ -8,69 +8,52 @@ import QualityStandards from './sections/qualityStandard'
 import OrderDrawer from './sections/orderDrawer'
 import Footer from './sections/footer'
 
+
 function App() {
 const YOGURT_PRODUCTS = [
   {
     id: 1,
-    title: "Wild Blueberry & Honey",
-    price: 5.50,
-    description: "Creamy whole-milk yogurt layered with sweet Maine wild blueberries and local clover honey.",
+    title: "MANGJO",
+    description: "A sweet and refreshing mango-flavored yogurt with a delicious tropical taste.",
+    price: 20000,
     calories: 180,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+    size: "120g cup",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNLks5lSjoAivsoODQYSF1HPp42SqwSAhrpzsE11EY8w&s=10"
   },
   {
     id: 2,
-    title: "Madagascar Vanilla Bean",
-    price: 4.99,
-    description: "Classic Greek yogurt infused with real Madagascar bourbon vanilla bean specks.",
+    title: "JOGURT",
+    description: "Classic, creamy, and smooth yogurt with a simple yet satisfying original taste.",
+    price: 20000,
     calories: 160,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1571212515416-fef01fc43637?auto=format&fit=crop&w=800&q=80"
+    size: "120g cup",
+    image: "https://www.feastingathome.com/wp-content/uploads/2023/08/homemade-yogurt-2.jpg"
   },
   {
     id: 3,
-    title: "Mediterranean Peach",
-    price: 5.25,
-    description: "Chunks of ripe sun-soaked peaches in a silky, rich strain of low-sugar yogurt.",
+    title: "JOBERRY",
+    description: "A delightful blend of creamy yogurt and sweet strawberry flavor.",
+    price: 20000,
     calories: 170,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80"
+    size: "120g cup",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_Q5SUx5GmU4tDMaHK6Xvj6SYkXnRHShs8CwdxEFaRQ&s=10"
   },
   {
     id: 4,
-    title: "Pistachio & Rose Blossom",
-    price: 6.25,
-    description: "A delicate middle-eastern inspired flavor featuring crushed pistachios and subtle rose water.",
+    title: "JOCHI",
+    description: "A refreshing yogurt with a sweet, fragrant lychee flavor.",
+    price: 20000,
     calories: 210,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+    size: "120g cup",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2a7y0t3BC2zJIQjV37YpjwUsh0AJkO37fCkUp6fOFOg&s=10"
   },
-  {
-    id: 5,
-    title: "Dark Chocolate Raspberry",
-    price: 5.75,
-    description: "Tart raspberry compote topped with 70% dark chocolate shavings and rich cream.",
-    calories: 220,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 6,
-    title: "Pure Original Greek",
-    price: 4.50,
-    description: "Thick, ultra-creamy unsweetened traditional Greek yogurt rich in protein.",
-    calories: 130,
-    size: "200g jar",
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
-  }
 ];
 
 const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   // Replace with your actual Google Form URL
-  const GOOGLE_FORM_URL = "https://forms.google.com/";
+  const GOOGLE_FORM_URL = "https://form.svhrt.com/6af50517a9ba5f7a43575e7e";
 
   const handleAddToCart = (product) => {
     setCart((prevCart) => {
@@ -105,7 +88,8 @@ const [cart, setCart] = useState([]);
   return (
     <>
       <Header cartCount={totalCartCount} onOpenCart={() => setIsCartOpen(true)}/>
-      <HeroSection/>
+      <HeroSection
+      formUrl={GOOGLE_FORM_URL}/>
       <MenuSection
         products={YOGURT_PRODUCTS}
         onAddToCart={handleAddToCart}/>

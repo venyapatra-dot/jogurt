@@ -13,9 +13,9 @@
 .standard-icon {
   width: 48px;
   height: 48px;
-  background-color: var(--accent-light);
-  color: var(--accent);
-  border-radius: var(--radius-md);
+  background-color: #ffffff;
+  color: #165b33;
+  border-radius: #cc2828;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +24,11 @@
 
 .standard-title {
   font-size: 1.125rem;
-  color: var(--primary);
+  color: #9c7825;
   margin-bottom: 0.25rem;
 }
 
 .standard-description {
-  color: var(--text-muted);
+  color: #9c7825;
   font-size: 0.875rem;
 }

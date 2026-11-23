@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(180deg, var(--bg-cream) 0%, #f4ede2 100%);
+  background: linear-gradient(180deg, var(--bg-cream) 0%, #fff8e7 100%);
   padding: 5rem 2rem 4rem;
   text-align: center;
 }
@@ -8,9 +8,11 @@
   max-width: 800px;
   margin: 0 auto;
 }
-
+.ornamen{
+  max-width: 350px;
+}
 .hero-subtitle {
-  color: var(--accent);
+  color: #b22222;
   text-transform: uppercase;
   font-size: 0.875rem;
   font-weight: 700;
@@ -20,14 +22,14 @@
 
 .hero-title {
   font-size: 3rem;
-  color: var(--primary);
+  color: #9c7825;
   margin-bottom: 1.25rem;
   line-height: 1.15;
 }
 
 .hero-description {
   font-size: 1.125rem;
-  color: var(--text-muted);
+  color: #165b33;
   max-width: 600px;
   margin: 0 auto 2.5rem;
 }
@@ -37,4 +39,14 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.explore {
+  color: #165b33;
+  text-decoration: none;
+}
+
+.direct {
+  color: #b22222;
+  text-decoration: none;
 }
