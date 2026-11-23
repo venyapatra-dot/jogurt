@@ -6,13 +6,16 @@ import msc from '../assets/christmast.mp3';
 export default function HeroSection({ formUrl }) {
   const audioRef = useRef(null);
   const [hasEntered, setHasEntered] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleEnterSite = () => {
-    setHasEntered(true);
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+ const handleEnterSite = () => {
+  setHasEntered(true);
+  if (audioRef.current) {
+    audioRef.current.play().catch((err) => {
+      setErrorMsg(err.name + ': ' + err.message);
+    });
+  }
+};
 
   return (
     <section className="hero">
